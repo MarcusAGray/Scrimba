@@ -1,0 +1,96 @@
+
+body {
+    margin: 0;
+    background-color: lightblue;
+
+    /* What is the best way to center a div across a whole
+    page vertically? Or what is the best way to make a 
+    dive take up the whole viewport */
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: linear-gradient(to bottom right, rgb(137, 240, 200), rgb(219, 219, 150));
+}
+
+.container {
+    max-width: 500px;
+    width: 500px;
+    height: 75%;
+    padding: 50px;
+    box-sizing: border-box;
+    
+    /* margin-top: 80px; */
+    background-color: white;
+
+    /* Trying to position this way
+    rather than using margin or padding
+    so my page doesn't have scroll */
+    position: absolute;
+    top: 70px;
+    left: 15%;
+    
+    text-align: center;
+
+    /* Need to make shadow more pronounced */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1 {
+    margin-top: 0.5em;
+    font-size: 35px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 360px;
+    margin: 0 auto;
+
+    /* border: 1px red solid; */
+}
+
+/* Having trouble getting the cards to the shape
+and size I want them. Do I need to have height to 
+make squares? */
+
+ul li {
+    width: 130px;
+    /* border: 1px green solid; */
+}
+
+.card {
+    width: 70%;
+    height: 70px;
+    margin: 20px auto;
+
+    box-sizing: border-box;
+    padding-top: 15px;
+    background-color: rgb(240, 216, 195);
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+
+button {
+    font-size: 1rem;
+    margin-top: 30px;
+
+    color: white;
+    background-color: rgb(216, 99, 128);
+    padding: 1em;
+    border: none;
+    border-radius: 6px;
+
+}
