@@ -25,10 +25,10 @@ body {
     /* Trying to position this way
     rather than using margin or padding
     so my page doesn't have scroll */
-    position: absolute;
-    top: 70px;
-    left: 15%;
     
+    margin: 0 auto;
+    margin-top: 70px;
+
     text-align: center;
 
     /* Need to make shadow more pronounced */
