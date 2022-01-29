@@ -1,6 +1,6 @@
 
 body {
-    background-color: black;
+    background-color: black;  
     margin: 0;
 }
 
@@ -9,14 +9,11 @@ body {
     height: 100vh;
 }
 
-
-
-
 .orb {
     height: 300px;
     width: 300px;
-
-    background: linear-gradient(-45deg, #aad1b6, #b5caf9, #c7b9ff, #f0b9dd, #f3bf99, #fffad1);
+    background: #aad1b6;
+    /* background: linear-gradient(-45deg, #aad1b6, #b5caf9, #c7b9ff, #f0b9dd, #f3bf99, #fffad1); */
     border-radius: 50%;
 
     position: absolute;
@@ -24,9 +21,22 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    animation-name: example;
-    animation-duration: 4s;
+    /* Animation */
+    animation-name: orb-colors;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
+@keyframes orb-colors {
+    0% {background-color: #aad1b6;}
+    20% {background-color: #b5caf9;}
+    40% {background-color: #c7b9ff;}
+    60% {background-color: #f0b9dd;}
+    80% {background-color: #f3bf99;}
+    100% {background-color: #fffad1;}
+}
+
+    /* background: linear-gradient(-45deg, #aad1b6, #b5caf9, #c7b9ff, #f0b9dd, #f3bf99, #fffad1); */
 
 
